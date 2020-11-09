@@ -2185,7 +2185,7 @@ function positionX(g) {
       var xs = horizontalCompaction(g, adjustedLayering,
         align.root, align.align, horiz === "r");
       if (horiz === "r") {
-        xs = _.mapValues(xs, function(x) { return -x; });
+        xs = _.mapValues(xs, function(x) { return x; });
       }
       xss[vert + horiz] = xs;
     });
